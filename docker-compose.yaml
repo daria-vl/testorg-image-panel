@@ -2,11 +2,8 @@ version: '3.0'
 
 services:
   grafana:
-    container_name: 'testorg-image-panel'
-    build:
-      context: ./.config
-      args:
-        grafana_version: ${GRAFANA_VERSION:-9.5.2}
+    container_name: grafana
+    image: ghcr.io/volkovlabs/app:latest
     ports:
       - 3000:3000/tcp
     volumes:
@@ -16,4 +13,3 @@ services:
       - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=/etc/grafana/provisioning/dashboards/home.json
       - GF_INSTALL_PLUGINS=marcusolsson-static-datasource
       - GF_USERS_DEFAULT_THEME=light
-  
