@@ -4,6 +4,7 @@ import { PanelOptions } from 'types';
 import { css, cx } from '@emotion/css';
 import { useStyles2 } from '@grafana/ui';
 import { Styles } from '../../styles';
+import { TestIds } from '../../constants';
 
 /**
  * Properties
@@ -32,6 +33,7 @@ export const ImagePanel: React.FC<Props> = ({ options, data, width, height }) =>
 
   return (
     <div
+    data-testid={TestIds.panel.root}
       className={cx(
         styles.wrapper,
         css`
