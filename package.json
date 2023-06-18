@@ -12,8 +12,8 @@
   "description": "Display image using url",
   "devDependencies": {
     "@babel/core": "^7.22.1",
-    "@grafana/e2e": "9.3.8",
-    "@grafana/e2e-selectors": "9.3.8",
+    "@grafana/e2e": "9.5.2",
+    "@grafana/e2e-selectors": "9.5.2",
     "@grafana/eslint-config": "^5.1.0",
     "@grafana/tsconfig": "^1.2.0-rc1",
     "@swc/core": "^1.3.60",
