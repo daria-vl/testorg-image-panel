@@ -4,9 +4,9 @@
  */
 export interface PanelOptions {
   /**
-   * Image URL
+   * Field name with Image URL
    * 
    * @type {string}
    */
-  url: string;
+  name: string;
 }
